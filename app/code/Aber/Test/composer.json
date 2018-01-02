@@ -1,0 +1,27 @@
+{
+    "name": "aber/module-test",
+    "description": "",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "aber@91.pl",
+            "name": "aber"
+        },
+        {
+            "email": "aber.aberti@gmail.com",
+            "name": "Artur Beresniewicz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "7.0.2|7.0.4|~7.0.6|~7.1.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "Aber\\Test\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

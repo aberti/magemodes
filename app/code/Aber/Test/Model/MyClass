@@ -1,0 +1,23 @@
+<?php
+
+namespace Aber\Test\Model;
+
+use Magento\Framework\HTTP\PhpEnvironment\RemoteAddress;
+
+class MyClass
+{
+    /**
+     * @var RemoteAddress
+     */
+    private $remoteAddress;
+
+    public function __construct(RemoteAddress $remoteAddress)
+    {
+        $this->remoteAddress = $remoteAddress;
+    }
+
+    public function getAddress()
+    {
+        return $this->remoteAddress->getRemoteAddress();
+    }
+}
